@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse-Bold.woff2') format('woff2'),
+        url('fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ---------- Sidebar ---------- */
+.sidebar {
+    position: relative;
+    flex: 0 0 35vw;
+    min-width: 360px;
+    background-image: url('HristoDimitrov.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-banner {
+    margin-top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.75rem 1rem;
+    width: 100%;
+}
+
+.logo-img {
+    height: 6.5rem;
+}
+
+.logo-text {
+    font-family: 'Norse', sans-serif;
+    font-weight: bold;
+    font-size: 4.8rem;
+    color: #fff;
+    line-height: 1;
+}
+
+.photo-credit {
+    margin-top: auto;
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.photo-credit a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: underline;
+}
+
+/* ---------- Main / Right side ---------- */
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f9fafb;
+}
+
+.hero {
+    padding: 2.5rem 3rem 2rem 3rem;
+    max-width: 700px;
+}
+
+.hero-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 1.2rem;
+}
+
+.hero-call {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.hero em {
+    font-style: italic;
+}
+
+/* ---------- Form ---------- */
+.signup-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-panel {
+    background-color: #fff;
+    padding: 1rem 3rem 2rem 3rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    color: #1f2937;
+}
+
+.form-row {
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 1.2rem;
+}
+
+.form-row:last-child {
+    margin-bottom: 0;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 240px;
+}
+
+.form-group label {
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    color: #374151;
+    margin-bottom: 0.15rem;
+}
+
+.form-group input {
+    padding: 0.35rem 0.6rem;
+    font-size: 0.95rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    background-color: #fff;
+    outline: none;
+    font-family: inherit;
+    width: 100%;
+    transition: border-color 0.1s, box-shadow 0.1s;
+}
+
+.form-group input:focus {
+    border-color: #2d6cc9;
+    box-shadow: 0 0 0 2px rgba(45, 108, 201, 0.15);
+}
+
+.form-group input:user-invalid {
+    border-color: #c53030;
+}
+
+/* ---------- Form Footer ---------- */
+.form-footer {
+    padding: 2rem 3rem 2.5rem 3rem;
+}
+
+.create-btn {
+    background-color: #596D48;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 2.8rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.15s;
+}
+
+.create-btn:hover {
+    background-color: #4c5e3e;
+}
+
+.login-prompt {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    color: #1f2937;
+}
+
+.login-link {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
