@@ -15,8 +15,71 @@
     padding: 0;
 }
 
-
-container {
-    display: flex;
+html, body {
+    height: 100%;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* sidebar */
+.sidebar {
+    
+    width: 40vw;
+    background-image: url("./HristoDimitrov.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-banner {
+    margin-top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-img {
+
+    height: 6.5rem;
+}
+/* main */
+
+main {
+    width: 60vw;
+    margin-left: 5%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+main .hero {
+    margin-top: 20%;
+}
+
+
+.form-row {
+display: flex;
+gap: 24px;
+margin-bottom: 20px;
+}
+
+.form-field {
+flex: 1;
+min-width: 0;
+}
+
+.form-field label {
+display: block;
+margin-bottom: 6px;
+}
+
+.form-field input {
+width: 100%;
+padding: 10px;
+}
+
 

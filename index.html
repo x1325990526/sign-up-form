@@ -7,36 +7,95 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
+    <div class="container">
         <div class="sidebar">
-
+            <div class="logo-banner">
+                <img src="./odin-lined.png" alt="odin-logo" class="logo-img">
+                <span class="odin-lined">Odin</span>
+            </div>
         </div>
+        
+        <main>
+            <div class="hero">
+                <p>
+                   This is not a real online service!
+                    You know you need something like this in your life to help you realize your deepest dreams.
+                    <br>Sign up now to get started.
+                </p>
+                <p>
+                    <br>You know you want to.
+                </p>
+            </div>
+            <div>
+                <form action="index.html" method="post" id="signup-form">
+                    <h2>Let's do this!</h2>
+                    <div class="form-row">
+                        <div class="form-field">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname">
+                        </div>
 
-        <div class="hero">
-            <p>
-               This is not a real online service!
-                You know you need something like this in your life to help you realize your deepest dreams. 
-                <br>Sign up now to get started.
-            </p>
-            <p>
-                You know you want to.
-            </p>
+                        <div class="form-field">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname">
+                        </div>
+                    </div>
 
-        </div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="email">EMAIL</label>
+                            <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            required
+                            >
+                        </div>
 
-        <div>
-            <form action="index.html" method="post">
-                <h2>Let's do this!</h2>
-                <p></p>
-                <p></p>
-                <p></p>
-            </form>
-        </div>
+                        <div class="form-field">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            autocomplete="tel"
+                            required
+                            >
+                        </div>
+                        </div>
 
-        <div class="form-footer">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="password">PASSWORD</label>
+                            <input 
+                            type="password"
+                            id="password"
+                            name="password"
+                            autocomplete="new-password"
+                            required
+                            >
+                        </div>
 
-        </div>
+                        <div class="form-field">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input 
+                            type="password"
+                            id="confirm-password"
+                            name="confirm-password"
+                            autocomplete="new-password"
+                            required
+                            >
+                        </div>
 
-    </main>
+                    </div>
+
+                </form>
+            </div>
+            <div class="form-footer">
+                <div> <button type="submit" form="signup-form">Create Account</button> </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
