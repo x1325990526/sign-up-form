@@ -100,11 +100,20 @@ padding: 10px;
             /* Form Footer */
 
 .create-btn {
-    padding: 12px 32px;
+    padding: 12px 46px;
     border-radius: 8px;
+    border-color: white;
+    border-style: none;
     margin-bottom: 16px;
     background-color: #596D48;
     color: white;
     font-weight: bold;
+    font-size: 16px;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 0.1);
+    cursor: pointer;
+
+}
+.create-btn:hover {
+    background-color: rgb(59, 87, 36);
 
 }
