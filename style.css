@@ -34,6 +34,8 @@ html, body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo-banner {
@@ -55,7 +57,17 @@ html, body {
     font-size: 5rem;
     
 }
-
+.photo-credit {
+    margin-top: auto;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+}
+.photo-credit a{
+    color: #f9fafb;
+    
+}
 
                     /* Main */
 
@@ -143,4 +155,3 @@ padding: 10px;
     background-color: rgb(59, 87, 36);
 
 }
-
