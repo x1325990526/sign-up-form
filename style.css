@@ -97,12 +97,28 @@ width: 100%;
 padding: 10px;
 }
 
+.form-field input {
+    border:1.2px solid #E5E7EB;
+    border-radius: 8px;
+    outline: none;
+    
+}
+.form-field input:user-invalid {
+    border-color: #c53030;
+
+}
+.form-field input:focus {
+
+    border-color: #2d6cc9;
+    box-shadow: 3px 3px 5px rgb(0 0 0 / 0.1);
+
+}
+
             /* Form Footer */
 
 .create-btn {
     padding: 12px 46px;
     border-radius: 8px;
-    border-color: white;
     border-style: none;
     margin-bottom: 16px;
     background-color: #596D48;
